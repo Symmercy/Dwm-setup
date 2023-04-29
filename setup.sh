@@ -15,5 +15,5 @@ echo "Do you want to reboot? (Y/N)"
 read $answer
 if [[ $answer == y ]]
 then
-  <reboot>
+  reboot
 fi
