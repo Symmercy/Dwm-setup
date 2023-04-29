@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen
+cd ..
 mkdir suckless
 cd suckless
 git clone https://github.com/Symmercy/dwm
