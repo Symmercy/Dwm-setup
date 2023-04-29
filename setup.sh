@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git xorg lightdm
+sudo pacman -S xorg lightdm
 mkdir suckless
 cd suckless
 git clone https://github.com/Symmercy/dwm
