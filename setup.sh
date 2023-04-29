@@ -5,11 +5,15 @@ mkdir suckless
 cd suckless
 git clone https://github.com/Symmercy/dwm
 git clone https://git.suckless.org/dmenu
+git clone https://git.suckless.org/st
 cd dwm
 sudo make clean install
 cd ..
 cd dmenu
-sudo make clean insall
+sudo make clean install
+cd ..
+cd st
+sudo make clean install
 sudo mkdir /usr/share/xsessions
 cd ~/Dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
