@@ -16,7 +16,7 @@ cd ..
 cd st
 sudo make clean install
 sudo mkdir /usr/share/xsessions
-cd ~/Dwm-setup
+cd ~/dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
 sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay.git
