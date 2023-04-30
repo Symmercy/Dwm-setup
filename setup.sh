@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance
 cd ..
 mkdir suckless
 cd suckless
@@ -22,9 +22,8 @@ sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-echo "Do you want to reboot? (Y/N)"
-read $answer
-if [[ $answer == y ]]
-then
-  reboot
-fi
+yay -S papirus-icon-theme
+yay -S dracula-gtk-theme
+yay -S layan-cursor-theme-git
+echo "Installing and themeing DWM is finished, you can restar your computer"
+
