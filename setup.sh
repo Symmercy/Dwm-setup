@@ -25,5 +25,5 @@ makepkg -si
 yay -S papirus-icon-theme
 yay -S dracula-gtk-theme
 yay -S layan-cursor-theme-git
-echo "Installing and themeing DWM is finished, you can restar your computer"
+echo "Installing and themeing DWM is finished, you can restart your computer"
 
