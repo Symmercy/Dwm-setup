@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance picom --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -22,8 +22,12 @@ sudo systemctl enable lightdm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-yay -S papirus-icon-theme
-yay -S dracula-gtk-theme
-yay -S layan-cursor-theme-git
+yay -S papirus-icon-theme --noconfirm
+yay -S dracula-gtk-theme --noconfirm
+yay -S layan-cursor-theme-git --noconfirm
+cd ~
+touch .xprofile
+echo "nitrogen --restore" >> .xprofile
+echo "picom" >> .profile
 echo "Installing and themeing DWM is finished, you can restart your computer"
 
