@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance picom --noconfirm
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -28,6 +28,5 @@ yay -S layan-cursor-theme-git --noconfirm
 cd ~
 touch .xprofile
 echo "nitrogen --restore" >> .xprofile
-echo "picom" >> .profile
 echo "Installing and themeing DWM is finished, you can restart your computer"
 
