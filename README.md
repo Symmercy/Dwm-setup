@@ -5,6 +5,7 @@ After you run this script, and go into dwm, you should open lxappearance and cha
 and the cursor theme to layan
 
 Add any lines you want to the .xprofile file, I added nitrogen --restore as a baseline,
+If you want you can edit slstatus
 
 the most important keybindings are 
 meta_p == dmenu
