@@ -7,7 +7,7 @@ cd suckless
 git clone https://github.com/Symmercy/dwm
 git clone https://git.suckless.org/dmenu
 git clone https://git.suckless.org/st
-git clone https://git.suckless.org/slstatus
+git clone https://github.com/Symmercy/slstatus
 cd dwm
 sudo make clean install
 cd ..
