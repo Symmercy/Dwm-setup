@@ -13,4 +13,5 @@ meta_shift_c == close program
 for the rest you can check out the config
 
 ![Screenshot_archlinux_2023-05-07_12:13:36](https://user-images.githubusercontent.com/91673840/236671541-8830e1c5-20e9-4666-bc1f-cca950f13ade.png)
+there are small differences (i didin't update the screenshot)
 
