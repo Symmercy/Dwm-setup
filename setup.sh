@@ -2,8 +2,8 @@
 
 sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance picom wget --noconfirm
 cd ..
-mkdir suckless
-cd suckless
+mkdir .suckless
+cd .suckless
 git clone https://github.com/Symmercy/dwm
 git clone https://git.suckless.org/dmenu
 git clone https://github.com/Symmercy/st
