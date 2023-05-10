@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome nitrogen lxappearance picom wget --noconfirm
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -38,9 +38,8 @@ cd wall
 wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
 cd ..
 touch .xprofile
-echo "nitrogen --restore &" >> .xprofile
+echo "feh --no-fehbg --bg-fill ~/wall/wallhaven-951e51.png &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
-echo "nitrogen --set-scaled ~/wall/wallhaven-951e51.png"
 echo "Installing and themeing DWM is finished, you can restart your computer"
 
