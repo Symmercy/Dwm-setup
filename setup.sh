@@ -35,7 +35,7 @@ yay -S layan-cursor-theme-git --noconfirm
 cd ~
 mkdir wall
 cd wall
-wget https://wallhaven.cc/w/951e51
+wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
 cd ..
 touch .xprofile
 echo "nitrogen --restore &" >> .xprofile
