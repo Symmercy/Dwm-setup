@@ -34,7 +34,9 @@ yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
 cd ~
 mkdir wall
+cd wall
 wget https://wallhaven.cc/w/951e51
+cd ..
 touch .xprofile
 echo "nitrogen --restore &" >> .xprofile
 echo "picom &" >> .xprofile
