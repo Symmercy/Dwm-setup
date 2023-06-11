@@ -41,6 +41,6 @@ touch .xprofile
 echo "feh --no-fehbg --bg-fill ~/wall/wallhaven-951e51.png &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
-echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
 echo "Installing DWM and (some other stuff) is finished, you can restart your computer"
 
