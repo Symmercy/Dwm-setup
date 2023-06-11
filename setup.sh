@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget --noconfirm
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -41,5 +41,6 @@ touch .xprofile
 echo "feh --no-fehbg --bg-fill ~/wall/wallhaven-951e51.png &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
-echo "Installing and themeing DWM is finished, you can restart your computer"
+echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+echo "Installing DWM and (some other stuff) is finished, you can restart your computer"
 
