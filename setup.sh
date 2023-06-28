@@ -44,5 +44,5 @@ echo "feh --no-fehbg --bg-fill --randomize ~/wall/* &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
-echo "Installing DWM and (some other stuff) is finished, you can restart your computer"
+echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
 
