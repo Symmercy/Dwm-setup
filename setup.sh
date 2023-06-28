@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome --noconfirm
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome python-pywal --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -36,9 +36,11 @@ cd ~
 mkdir wall
 cd wall
 wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
+wget https://w.wallhaven.cc/full/6k/wallhaven-6kpdvl.jpg
+wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
 cd ..
 touch .xprofile
-echo "feh --no-fehbg --bg-fill ~/wall/wallhaven-951e51.png &" >> .xprofile
+echo "feh --no-fehbg --bg-fill --randomize ~/wall/* &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
