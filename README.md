@@ -15,4 +15,6 @@ for the rest you can check out the config
 ![Screenshot_archlinux_2023-05-07_12:13:36](https://user-images.githubusercontent.com/91673840/236671541-8830e1c5-20e9-4666-bc1f-cca950f13ade.png)
 old config
 there are small differences (I didn't update the screenshot)
+![image](https://github.com/Symmercy/dwm-setup/assets/91673840/fdf08740-88be-40b5-81c3-6ae5c08af730)
+New config
 
