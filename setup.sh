@@ -39,6 +39,7 @@ wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
 wget https://w.wallhaven.cc/full/6k/wallhaven-6kpdvl.jpg
 wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
 wget https://w.wallhaven.cc/full/0j/wallhaven-0jmg55.jpg
+wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
 cd ..
 touch .xprofile
 echo "feh --no-fehbg --bg-fill --randomize ~/wall/* &" >> .xprofile
