@@ -5,7 +5,7 @@ cd ..
 mkdir suckless
 cd suckless
 git clone https://github.com/Symmercy/dwm
-git clone https://git.suckless.org/dmenu
+git clone https://github.com/Symmercy/dmenu
 git clone https://github.com/Symmercy/st
 git clone https://github.com/Symmercy/slstatus
 cd dwm
