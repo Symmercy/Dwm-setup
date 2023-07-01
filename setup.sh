@@ -41,6 +41,13 @@ wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
 wget https://w.wallhaven.cc/full/0j/wallhaven-0jmg55.jpg
 # Dont like this one either wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
 cd ..
+mkdir scripts
+cd scripts
+mkdir dmscripts
+cd dmscripts
+############ add dmenu scripts
+cd ..
+cd ..
 touch .xprofile
 echo "feh --no-fehbg --bg-fill --randomize ~/wall/* &" >> .xprofile
 echo "picom &" >> .xprofile
