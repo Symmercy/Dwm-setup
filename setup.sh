@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot --noconfirm
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst --noconfirm
 cd ..
 mkdir suckless
 cd suckless
