@@ -18,3 +18,5 @@ there are small differences (I didn't update the screenshot)
 ![image](https://github.com/Symmercy/dwm-setup/assets/91673840/fdf08740-88be-40b5-81c3-6ae5c08af730)
 New config
 
+i get all of my wallpapers from this repo https://github.com/Gingeh/wallpapers
+
