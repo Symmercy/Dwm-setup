@@ -44,11 +44,12 @@ mkdir wall
 cd wall
 # I dont like this one wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
 # Dont like this one either wget https://w.wallhaven.cc/full/6k/wallhaven-6kpdvl.jpg
-wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
-wget https://w.wallhaven.cc/full/0j/wallhaven-0jmg55.jpg
-wget https://r4.wallpaperflare.com/wallpaper/265/152/1005/nature-sun-sky-landscape-wallpaper-a9d048adb17aad7b462708ef60a1564d.jpg
-wget https://c4.wallpaperflare.com/wallpaper/266/749/195/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg
+# wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
+# wget https://w.wallhaven.cc/full/0j/wallhaven-0jmg55.jpg
+# wget https://r4.wallpaperflare.com/wallpaper/265/152/1005/nature-sun-sky-landscape-wallpaper-a9d048adb17aad7b462708ef60a1564d.jpg
+# wget https://c4.wallpaperflare.com/wallpaper/266/749/195/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg
 # Dont like this one either wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
+git clone https://github.com/Gingeh/wallpapers
 #Installing wallpapers
 cd ..
 mkdir scripts
