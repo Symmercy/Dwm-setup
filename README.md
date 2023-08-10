@@ -16,7 +16,10 @@ for the rest you can check out the config
 old config
 there are small differences (I didn't update the screenshot)
 ![image](https://github.com/Symmercy/dwm-setup/assets/91673840/fdf08740-88be-40b5-81c3-6ae5c08af730)
-New config
+old config
+![2023-08-10_12-16](https://github.com/Symmercy/dwm-setup/assets/91673840/25a3dc2e-4df6-4014-afe9-b9c723e24416)
+new config
+
 
 i get all of my wallpapers from this repo https://github.com/Gingeh/wallpapers
 
