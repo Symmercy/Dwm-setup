@@ -33,7 +33,7 @@ mkdir Utils
 cd Utils
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 #Installing yay
 yay -S papirus-icon-theme --noconfirm
 yay -S dracula-gtk-theme --noconfirm
