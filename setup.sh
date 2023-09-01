@@ -9,7 +9,7 @@ git clone https://github.com/Symmercy/dwm
 git clone https://github.com/Symmercy/dmenu
 git clone https://github.com/Symmercy/st
 git clone https://github.com/Symmercy/slstatus
-#git cloneing my builds of dwm dmenu st and slstatus
+#git cloneing & compiling my builds of dwm dmenu st and slstatus
 cd dwm
 sudo make clean install
 cd ..
@@ -21,24 +21,24 @@ sudo make clean install
 cd ..
 cd slstatus
 sudo make clean install
-#Building suckless programs
+#Putting a dwm.desktop file into the correct folder so i can log in
 sudo mkdir /usr/share/xsessions
 cd ~/dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
-#Copying dwm.desktop from dwm-setup folder to /usr/xsessions
-sudo systemctl enable lightdm
 #Enableing lightdm
+sudo systemctl enable lightdm
+#Installing yay
 cd ~
 mkdir Utils
 cd Utils
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
-#Installing yay
+#Installing stuff for themes
 yay -S papirus-icon-theme --noconfirm
 yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
-#themeing
+#Installing wallpapers
 cd ~
 mkdir wall
 cd wall
@@ -62,7 +62,7 @@ sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-web
 sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 
-#Installing wallpapers
+#Putting a place for dmscripts
 cd ..
 mkdir scripts
 cd scripts
