@@ -50,6 +50,18 @@ cd wall
 # wget https://c4.wallpaperflare.com/wallpaper/266/749/195/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg
 # Dont like this one either wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
 git clone https://github.com/Gingeh/wallpapers
+
+#Instaling glorious webkit 2 theme.
+
+git clone https://aur.archlinux.org/lightdm-webkit2-theme-glorious.git
+cd lightdm-webkit2-theme-glorious
+makepkg -sri --noconfirm
+cd ..
+cp -r lightdm-webkit2-theme-glorious /usr/share/lightdm-webkit/themes/glorious
+sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
+sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+
 #Installing wallpapers
 cd ..
 mkdir scripts
