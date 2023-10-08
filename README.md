@@ -23,3 +23,5 @@ new config
 
 i get all of my wallpapers from this repo https://github.com/Gingeh/wallpapers
 
+if lightdm breaks, just enable ly with sudo systemctl enable ly && sudo systemctl disable lightdm
+
