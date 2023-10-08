@@ -1,6 +1,10 @@
 #!/bin/bash
-
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
+# optimise mirrors
+sudo pamcan -S reflector
+sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
+sudo pacman -Syy
+sudo pacman -Syu
+sudo pacman -S xorg lightdm lightdm-gtk-greeter ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
 # Installing dependencies
 cd ..
 mkdir suckless
