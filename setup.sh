@@ -1,6 +1,6 @@
 #!/bin/bash
 # optimise mirrors
-sudo pamcan -S reflector
+sudo pacman -S reflector
 sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
