@@ -77,7 +77,7 @@ cd dmscripts
 cd ..
 cd ..
 touch .xprofile
-echo "feh --no-fehbg --bg-fill --randomize ~/catpuccin-wallpapers &" >> .xprofile
+echo "feh --no-fehbg --bg-fill ~/catpuccin-wallpapers/minimalistic/gradient-synth-cat.png &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
