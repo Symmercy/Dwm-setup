@@ -5,7 +5,7 @@ sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
 #Installing dependencies
-sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk lightdm lightdm-webkit2-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim --noconfirm
+sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -30,7 +30,7 @@ sudo mkdir /usr/share/xsessions
 cd ~/dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
 #Enableing lightdm
-sudo systemctl enable lightdm
+#sudo systemctl enable lightdm
 #Installing yay
 cd ~
 mkdir Utils
@@ -57,10 +57,10 @@ cd ~
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
 
 #Instaling glorious webkit 2 theme.
-yay -Syu lightdm-webkit2-theme-glorious
-sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
-sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
-sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+#yay -Syu lightdm-webkit2-theme-glorious
+#sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
+#sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+#sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 #Putting a place for dmscripts
 cd ~/Utils
 cd ..
@@ -71,7 +71,7 @@ cd dmscripts
 ############ add dmenu scripts
 cd ~
 touch .xprofile
-echo "feh --no-fehbg --bg-fill ~/catpuccin-wallpapers/minimalistic/gradient-synth-cat.png &" >> .xprofile
+echo "feh --no-fehbg --bg-fill ~/catppuccin-wallpapers/minimalistic/gradient-synth-cat.png &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
