@@ -5,7 +5,7 @@ sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
 #Installing dependencies
-sudo pacman -S xorg lightdm lightdm-gtk-greeter ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
+sudo pacman -S xorg lightdm lightdm-webkit2-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -43,9 +43,9 @@ yay -S papirus-icon-theme --noconfirm
 yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
 #Installing wallpapers
-cd ~
-mkdir wall
-cd wall
+#cd ~
+#mkdir wall
+#cd wall
 # I dont like this one wget https://w.wallhaven.cc/full/95/wallhaven-951e51.png
 # Dont like this one either wget https://w.wallhaven.cc/full/6k/wallhaven-6kpdvl.jpg
 # wget https://w.wallhaven.cc/full/0w/wallhaven-0wqmpx.jpg
@@ -57,7 +57,7 @@ cd ..
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
 
 #Instaling glorious webkit 2 theme.
-
+cd ~/Utils
 git clone https://aur.archlinux.org/lightdm-webkit2-theme-glorious.git
 cd lightdm-webkit2-theme-glorious
 makepkg -sri --noconfirm
@@ -68,14 +68,14 @@ sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/li
 sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 
 #Putting a place for dmscripts
+cd ~/Utils
 cd ..
 mkdir scripts
 cd scripts
 mkdir dmscripts
 cd dmscripts
 ############ add dmenu scripts
-cd ..
-cd ..
+cd ~
 touch .xprofile
 echo "feh --no-fehbg --bg-fill ~/catpuccin-wallpapers/minimalistic/gradient-synth-cat.png &" >> .xprofile
 echo "picom &" >> .xprofile
