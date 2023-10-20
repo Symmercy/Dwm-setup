@@ -53,20 +53,14 @@ yay -S layan-cursor-theme-git --noconfirm
 # wget https://r4.wallpaperflare.com/wallpaper/265/152/1005/nature-sun-sky-landscape-wallpaper-a9d048adb17aad7b462708ef60a1564d.jpg
 # wget https://c4.wallpaperflare.com/wallpaper/266/749/195/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg
 # Dont like this one either wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
-cd ..
+cd ~
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
 
 #Instaling glorious webkit 2 theme.
-cd ~/Utils
-git clone https://aur.archlinux.org/lightdm-webkit2-theme-glorious.git
-cd lightdm-webkit2-theme-glorious
-makepkg -sri --noconfirm
-cd ..
-sudo cp -r lightdm-webkit2-theme-glorious /usr/share/lightdm-webkit/themes/glorious
+yay -Syu lightdm-webkit2-theme-glorious
 sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
 sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = glorious #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 sudo sed -i 's/^debug_mode\s*=\s*\(.*\)/debug_mode = true #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
-
 #Putting a place for dmscripts
 cd ~/Utils
 cd ..
