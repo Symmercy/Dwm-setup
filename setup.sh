@@ -5,7 +5,7 @@ sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
 #Installing dependencies
-sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk lightdm lightdm-webkit2-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
+sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk lightdm lightdm-webkit2-greeter ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim --noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -78,3 +78,5 @@ echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
 echo "flameshot &" >> .xprofile
 echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
 #Autostart
+#Adding an alias for neovim in bashrc
+echo "alias vim="nvim" >> .bashrc
