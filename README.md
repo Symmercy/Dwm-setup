@@ -1,4 +1,6 @@
 # dwm-setup
+
+DONT RUN THIS AS ROOT!
 This is my script that sets up dwm to my liking (on arch)
 
 After you run this script, and go into dwm, you should open lxappearance and change the icon theme to papirus, gtk theme to dracula
