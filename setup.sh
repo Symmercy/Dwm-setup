@@ -4,16 +4,16 @@ sudo pamcan -S reflector
 sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
+#Installing dependencies
 sudo pacman -S xorg lightdm lightdm-gtk-greeter ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer --noconfirm
-# Installing dependencies
 cd ..
 mkdir suckless
 cd suckless
+#Compiling my builds of suckless software
 git clone https://github.com/Symmercy/dwm
 git clone https://github.com/Symmercy/dmenu
 git clone https://github.com/Symmercy/st
 git clone https://github.com/Symmercy/slstatus
-#git cloneing & compiling my builds of dwm dmenu st and slstatus
 cd dwm
 sudo make clean install
 cd ..
@@ -53,7 +53,8 @@ cd wall
 # wget https://r4.wallpaperflare.com/wallpaper/265/152/1005/nature-sun-sky-landscape-wallpaper-a9d048adb17aad7b462708ef60a1564d.jpg
 # wget https://c4.wallpaperflare.com/wallpaper/266/749/195/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg
 # Dont like this one either wget https://w.wallhaven.cc/full/jx/wallhaven-jxvk15.png
-git clone https://github.com/Gingeh/wallpapers
+cd ..
+git clone https://github.com/zhichaoh/catppuccin-wallpapers
 
 #Instaling glorious webkit 2 theme.
 
@@ -76,7 +77,7 @@ cd dmscripts
 cd ..
 cd ..
 touch .xprofile
-echo "feh --no-fehbg --bg-fill --randomize ~/wall/* &" >> .xprofile
+echo "feh --no-fehbg --bg-fill --randomize ~/catpuccin-wallpapers &" >> .xprofile
 echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
