@@ -79,4 +79,4 @@ echo "flameshot &" >> .xprofile
 echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
 #Autostart
 #Adding an alias for neovim in bashrc
-echo "alias vim="nvim" >> .bashrc
+echo "alias vim="nvim"" >> ~/.bashrc
