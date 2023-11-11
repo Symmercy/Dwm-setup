@@ -73,6 +73,8 @@ cd dmscripts
 curl -sS https://starship.rs/install.sh | sh
 echo "eval "$(starship init bash)"" >> .bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
+# adding nerd font 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
 
 cd ~
 touch .xprofile
