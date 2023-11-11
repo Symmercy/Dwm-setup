@@ -69,6 +69,11 @@ cd scripts
 mkdir dmscripts
 cd dmscripts
 ############ add dmenu scripts
+# starship install
+curl -sS https://starship.rs/install.sh | sh
+echo "eval "$(starship init bash)"" >> .bashrc
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+
 cd ~
 touch .xprofile
 echo "feh --no-fehbg --bg-fill ~/catppuccin-wallpapers/minimalistic/gradient-synth-cat.png &" >> .xprofile
