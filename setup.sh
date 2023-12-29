@@ -7,7 +7,7 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 #Installing dependencies
-sudo pacman -S  xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy--noconfirm
+sudo pacman -S  xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy --noconfirm
 cd ..
 mkdir suckless
 cd suckless
