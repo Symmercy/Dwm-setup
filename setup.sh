@@ -7,7 +7,7 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 #Installing dependencies
-sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo --noconfirm
+sudo pacman -S xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy--noconfirm
 cd ..
 mkdir suckless
 cd suckless
@@ -86,6 +86,7 @@ echo "picom &" >> .xprofile
 echo "slstatus &" >> .xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
 echo "flameshot &" >> .xprofile
+echo "xcopy &" >> .xprofile
 
 #Adding aliases to .bashrc
 echo "alias vim="nvim"" >> ~/.bashrc
