@@ -93,7 +93,7 @@ echo "alias vim=\"nvim\"" >> ~/.bashrc
 echo "alias paru=\"yay\"" >> ~/.bashrc
 echo "alias ls=\"eza -al --color=always --group-directories-first\"" >> ~/.bashrc
 
-#Adding an xresources filev (catppuccin)
+#Adding an xresources file (catppuccin)
 cd ~
 git clone https://github.com/catppuccin/xresources
 mv xresources xresources-temp
