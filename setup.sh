@@ -2,19 +2,20 @@
 
 # optimise mirrors
 sudo pacman -S reflector
-sudo reflector -- verbose --sort  rate - l 30 --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 sudo pacman -Syu
 
 #Installing dependencies
-sudo pacman -S  xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy --noconfirm
+sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy --noconfirm
 cd ..
 mkdir suckless
 cd suckless
 
 #Installing exa (prettier ls) with cargo
+cd ~
 cargo install exa
-echo "PATH="$HOME/.cargo/bin${PATH:+:${PATH}}""
+echo "PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"" >> .bashrc
 
 #Compiling my builds of suckless software
 git clone https://github.com/Symmercy/dwm
