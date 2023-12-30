@@ -48,7 +48,7 @@ yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
 
 #Installing aur software
-yay -S floorp --nocomfirm
+yay -S floorp --noconfirm
 
 #Installing wallpapers
 cd ~
@@ -75,6 +75,7 @@ unzip CascadiaCode.zip
 sudo mkdir /usr/share/fonts/CascadiaCode
 sudo mv *.ttf /usr/share/fonts/CascadiaCode
 rm -rf CascadiaCode.zip
+cd ~ rm -rf Download-temp
 sudo fc-cache -fv
 
 #Autostart
