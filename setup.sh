@@ -7,15 +7,10 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 #Installing dependencies
-sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip cargo xcopy --noconfirm
+sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip xcopy eza --noconfirm
 cd ..
 mkdir suckless
 cd suckless
-
-#Installing exa (prettier ls) with cargo
-cd ~
-cargo install exa
-echo "PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"" >> .bashrc
 
 #Compiling my builds of suckless software
 git clone https://github.com/Symmercy/dwm
@@ -43,17 +38,17 @@ sudo mv dwm.desktop /usr/share/xsessions
 cd ~
 mkdir Utils
 cd Utils
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si --noconfirm
 
 #Installing themes
-paru -S papirus-icon-theme --noconfirm
-paru -S dracula-gtk-theme --noconfirm
-paru -S layan-cursor-theme-git --noconfirm
+yay -S papirus-icon-theme --noconfirm
+yay -S dracula-gtk-theme --noconfirm
+yay -S layan-cursor-theme-git --noconfirm
 
 #Installing aur software
-paru -S floorp --nocomfirm
+yay -S floorp --nocomfirm
 
 #Installing wallpapers
 cd ~
@@ -69,7 +64,7 @@ cd ~
 
 # starship install
 curl -sS https://starship.rs/install.sh | sh
-echo "eval "$(starship init bash)"" >> .bashrc
+echo 'eval "$(starship init bash)"' >> .bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 # adding nerd font
@@ -95,7 +90,7 @@ echo "xcopy &" >> .xprofile
 #Adding aliases to .bashrc
 echo "alias vim="nvim"" >> ~/.bashrc
 echo "alias paru="yay"" >> ~/.bashrc
-echo "alias ls="exa -al --color=always --group-directories-first"" >> ~/.bashrc
+echo 'alias ls="exa -al --color=always --group-directories-first"' >> ~/.bashrc
 
 # Telling the user that it is finished
 echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
