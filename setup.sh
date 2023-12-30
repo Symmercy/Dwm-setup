@@ -51,6 +51,9 @@ paru -S papirus-icon-theme --noconfirm
 paru -S dracula-gtk-theme --noconfirm
 paru -S layan-cursor-theme-git --noconfirm
 
+#Installing aur software
+paru -S floorp --nocomfirm
+
 #Installing wallpapers
 cd ~
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
