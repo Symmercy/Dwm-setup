@@ -64,7 +64,7 @@ cd ~
 
 # starship install
 curl -sS https://starship.rs/install.sh | sh
-echo 'eval "$(starship init bash)"' >> .bashrc
+echo "eval \"$(starship init bash)\"" >> .bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 # adding nerd font
@@ -89,9 +89,18 @@ echo "flameshot &" >> .xprofile
 echo "xcopy &" >> .xprofile
 
 #Adding aliases to .bashrc
-echo "alias vim="nvim"" >> ~/.bashrc
-echo "alias paru="yay"" >> ~/.bashrc
-echo 'alias ls="exa -al --color=always --group-directories-first"' >> ~/.bashrc
+echo "alias vim=\"nvim\"" >> ~/.bashrc
+echo "alias paru=\"yay\"" >> ~/.bashrc
+echo "alias ls=\"eza -al --color=always --group-directories-first\"" >> ~/.bashrc
+
+#Adding an xresources filev (catppuccin)
+cd ~
+git clone https://github.com/catppuccin/xresources
+mv xresources xresources-temp
+cd xresources-temp
+mv macchiato.Xresources Xresources
+mv Xresources ~
+rm -rf xresources-temp
 
 # Telling the user that it is finished
 echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
