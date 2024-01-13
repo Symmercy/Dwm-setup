@@ -65,7 +65,7 @@ cd ~
 
 # starship install
 curl -sS https://starship.rs/install.sh | sh
-echo "eval \"$(starship init bash)\"" >> .bashrc
+echo 'eval "$(starship init bash)"' >> .bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 # adding nerd font
