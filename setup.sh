@@ -11,6 +11,8 @@ sudo pacman -Syyu
 sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip xcopy eza
 
 # Making a directory for suckless software
+cd ~
+mkdir .local
 mkdir .local/.src
 cd .local/.src
 
