@@ -64,7 +64,7 @@ cd ~
 
 # starship install
 curl -sS https://starship.rs/install.sh | sh
-echo 'eval "$(starship init bash)"' >> .bashrc
+echo 'eval "$(starship init bash)"' >>.bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 # adding nerd font
@@ -75,24 +75,24 @@ unzip CascadiaCode.zip
 sudo mkdir /usr/share/fonts/CascadiaCode
 sudo mv *.ttf /usr/share/fonts/CascadiaCode
 rm -rf CascadiaCode.zip
-cd ~ 
+cd ~
 rm -rf Download-temp
 sudo fc-cache -fv
 
 #Autostart
 cd ~
 touch .xprofile
-echo "feh --no-fehbg --bg-fill ~/wall/minimalistic/gradient-synth-cat.png &" >> .xprofile
-echo "picom &" >> .xprofile
-echo "slstatus &" >> .xprofile
-echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >> .xprofile
-echo "flameshot &" >> .xprofile
-echo "xcopy &" >> .xprofile
+echo "feh --no-fehbg --bg-fill ~/wall/minimalistic/gradient-synth-cat.png &" >>.xprofile
+echo "picom &" >>.xprofile
+echo "slstatus &" >>.xprofile
+echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >>.xprofile
+echo "flameshot &" >>.xprofile
+echo "xcopy &" >>.xprofile
 
 #Adding aliases to .bashrc
-echo "alias vim=\"nvim\"" >> ~/.bashrc
-echo "alias paru=\"yay\"" >> ~/.bashrc
-echo "alias ls=\"eza -al --color=always --group-directories-first\"" >> ~/.bashrc
+echo "alias vim=\"nvim\"" >>~/.bashrc
+echo "alias paru=\"yay\"" >>~/.bashrc
+echo "alias ls=\"eza -al --color=always --group-directories-first\"" >>~/.bashrc
 
 #Adding an xresources file (catppuccin)
 cd ~
@@ -106,7 +106,7 @@ rm -rf xresources-temp
 #Installing lazyvim
 cd ~/.config
 rm -rf nvim
-git clone https://github.com/LazyVim/starter 
+git clone https://github.com/LazyVim/starter
 mv starter nvim
 
 # Telling the user that it is finished
@@ -115,8 +115,7 @@ echo "(y/n)"
 read choice
 
 if [[ $choice == "y" ]]; then
-    reboot
+	reboot
 else
-    exit 0
-
-
+	exit 0
+fi
