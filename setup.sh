@@ -115,6 +115,6 @@ read choice
 if [[ $choice == "y" ]]; then
     reboot
 else
-    exit
+    exit 0
 
 
