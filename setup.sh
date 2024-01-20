@@ -11,8 +11,8 @@ sudo pacman -Syyu
 sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip xcopy eza
 
 # Making a directory for suckless software
-mkdir suckless
-cd suckless
+mkdir .local/.src
+cd .local/.src
 
 #Compiling my builds of suckless software
 git clone https://github.com/Symmercy/dwm
@@ -36,7 +36,7 @@ sudo mkdir /usr/share/xsessions
 cd ~/dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
 
-#Installing paru
+#Installing yay (aur helper)
 cd ~
 mkdir Utils
 cd Utils
@@ -56,10 +56,6 @@ yay -S floorp --noconfirm
 cd ~
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
 mv catppuccin-wallpapers wall
-
-#Putting a place for dmscripts (add dmenu scripts your self)
-cd ~/Utils
-mkdir dmscripts
 
 #Going to home
 cd ~
@@ -105,5 +101,20 @@ mv macchiato.Xresources Xresources
 mv Xresources ~
 rm -rf xresources-temp
 
+#Installing lazyvim
+cd ~/.config
+rm -rf nvim
+git clone https://github.com/LazyVim/starter 
+mv starter nvim
+
 # Telling the user that it is finished
-echo "Installing DWM and (some other stuff) is finished, feel free to restart your computer"
+echo "Installing DWM is finished do you want to restart your PC"
+echo "(y/n)"
+read choice
+
+if [[ $choice == "y" ]]; then
+    reboot
+else
+    exit
+
+
