@@ -14,6 +14,7 @@ sleep 5
 cd ~
 mkdir .local
 mkdir .local/.src
+mkdir .local/.utils
 cd .local/.src
 
 #Compiling my builds of suckless software
@@ -39,9 +40,7 @@ cd ~/dwm-setup
 sudo mv dwm.desktop /usr/share/xsessions
 
 #Installing yay (aur helper)
-cd ~
-mkdir Utils
-cd Utils
+cd ~/.local/.src/.utils
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
