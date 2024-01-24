@@ -52,7 +52,7 @@ yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
 
 #Installing aur software
-yay -S floorp-bin --noconfirm
+yay -S brave-bin --noconfirm
 
 #Installing wallpapers
 cd ~
