@@ -8,7 +8,7 @@ sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu --noconfirm
 sleep 3
 #Installing dependencies
-sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip xcopy eza
+sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip eza
 sleep 5
 # Making a directory for suckless software
 cd ~
