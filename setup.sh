@@ -127,7 +127,6 @@ if [[ $bluetooth_choice == "y" ]]; then
 	elif [[ $audio_choice == "2" ]]; then
 		sudo pacman -S pulseaudio-bluetooth
 	else
-
 	fi
 	echo "blueman-applet &" >>~/xprofile
 else
