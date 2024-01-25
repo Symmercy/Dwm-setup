@@ -115,19 +115,19 @@ mv starter nvim
 #Asking user about bluetooth, and setting up if the user types y
 echo "Do you want to set up bluetooth"
 echo "(y/n)"
-read bluetooth-choice
-if [[ $bluetooth-choice == "y"]]; then
+read bluetooth_choice
+if [[ $bluetooth_choice == "y"]]; then
   sudo pacman -S bluez blueman
   sudo systemctl enable bluetooth
   echo """1 -- pipewire
 2 -- pulseaudio"""
-  read audio-choice
-  if [[ $audio-choice == "1"]]; then
+  read audio_choice
+  if [[ $audio_choice == "1"]]; then
     continue
-  elif [[ $audio-choice == "2"]]; then
+  elif [[ $audio_choice == "2"]]; then
     sudo pacman -S pulseaudio-bluetooth
   else
-    continue
+  
   fi
   echo "blueman-applet &" >> ~/xprofile
 else
@@ -136,7 +136,7 @@ fi
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "(y/n)"
-read reboot-choice
+read reboot_choice
 
 #if statement for rebooting
 if [[ $reboot-choice == "y" ]]; then
