@@ -112,7 +112,7 @@ rm -rf nvim
 git clone https://github.com/LazyVim/starter
 mv starter nvim
 
-# Telling the user that it is finished
+# Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "(y/n)"
 read choice
