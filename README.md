@@ -28,5 +28,6 @@ old config
 old config
 
 i get all of my wallpapers from this repo https://github.com/Gingeh/wallpapers
+If the web browser gets really slow run: sudo pacman -Rdd xdg-desktop-portal-kde
 
 
