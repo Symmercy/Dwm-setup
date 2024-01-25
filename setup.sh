@@ -124,9 +124,13 @@ read bluetooth_choice
 if [[ $bluetooth_choice == "y" ]]; then
 	sudo pacman -S bluez blueman
 	sudo systemctl enable bluetooth
+	#Installing software
+
 	echo """1 -- pipewire
 2 -- pulseaudio"""
 	read audio_choice
+	#asking user for input
+
 	if [[ $audio_choice == "1" ]]; then
 		continue
 	elif [[ $audio_choice == "2" ]]; then
@@ -134,6 +138,7 @@ if [[ $bluetooth_choice == "y" ]]; then
 	else
 	fi
 	echo "blueman-applet &" >>~/xprofile
+	#if statement for installing pulseaudio-bluetooth
 else
 	continue
 fi
