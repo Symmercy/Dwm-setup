@@ -112,12 +112,18 @@ rm -rf nvim
 git clone https://github.com/LazyVim/starter
 mv starter nvim
 
+#Asking user about bluetooth, and setting up if the user types y
+echo "Do you want to set up bluetooth"
+echo "(y/n)"
+read bluetooth-choice
+
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "(y/n)"
-read choice
+read reboot-choice
 
-if [[ $choice == "y" ]]; then
+#if statement for rebooting
+if [[ $reboot-choice == "y" ]]; then
 	reboot
 else
 	exit 0
