@@ -116,7 +116,19 @@ mv starter nvim
 echo "Do you want to set up bluetooth"
 echo "(y/n)"
 read bluetooth-choice
+if [[ $bluetooth-choice == "y"]]; then
+  sudo pacman -S bluez blueman
+  sudo systemctl enable bluetooth
+  echo """1 -- pipewire
+2 -- pulseaudio"""
+  read audio-choice
+  if [[ $audio-choice == "1"]]; then
+    continue
+  elif [[ $audio-choice == "2"]]; then
+    sudo pacman -S pulseaudio-bluetooth
 
+else
+  continue
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "(y/n)"
