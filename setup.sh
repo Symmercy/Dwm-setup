@@ -60,7 +60,7 @@ yay -S brave-bin --noconfirm
 #Installing wallpapers
 cd ~
 git clone https://github.com/zhichaoh/catppuccin-wallpapers
-mv catppuccin-wallpapers wall
+mv catppuccin-wallpapers .wall
 
 #Going to home
 cd ~
@@ -85,7 +85,7 @@ sudo fc-cache -fv
 #Autostart
 cd ~
 touch .xprofile
-echo "feh --no-fehbg --bg-fill ~/wall/minimalistic/gradient-synth-cat.png &" >>.xprofile
+echo "feh --no-fehbg --bg-fill ~/.wall/minimalistic/gradient-synth-cat.png &" >>.xprofile
 echo "picom &" >>.xprofile
 echo "slstatus &" >>.xprofile
 echo "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &" >>.xprofile
