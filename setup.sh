@@ -126,9 +126,13 @@ if [[ $bluetooth-choice == "y"]]; then
     continue
   elif [[ $audio-choice == "2"]]; then
     sudo pacman -S pulseaudio-bluetooth
-
+  else
+    continue
+  fi
+  echo "blueman-applet &" >> ~/xprofile
 else
   continue
+fi 
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "(y/n)"
