@@ -106,6 +106,10 @@ mv macchiato.Xresources Xresources
 mv Xresources ~
 rm -rf xresources-temp
 
+#Enableing services with systemctl
+systemctl enable ly
+#insert more services
+
 #Installing lazyvim
 cd ~/.config
 rm -rf nvim
