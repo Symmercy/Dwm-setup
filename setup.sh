@@ -102,8 +102,9 @@ cd ~
 git clone https://github.com/catppuccin/xresources
 mv xresources xresources-temp
 cd xresources-temp
-mv macchiato.Xresources Xresources
-mv Xresources ~
+mv macchiato.Xresources .Xresources
+mv .Xresources ~
+cd ~
 rm -rf xresources-temp
 
 #Enableing services with systemctl
