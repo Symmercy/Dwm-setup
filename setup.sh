@@ -144,6 +144,7 @@ else
 fi
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
+echo "also when you're finished running this and reboot into dwm delete the dwm-setup folder"
 echo "(y/n)"
 read reboot_choice
 
