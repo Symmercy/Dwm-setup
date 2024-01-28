@@ -117,31 +117,36 @@ rm -rf nvim
 git clone https://github.com/LazyVim/starter
 mv starter nvim
 
-#Asking user about bluetooth, and setting up if the user types y
-echo "Do you want to set up bluetooth"
+# Asking user about bluetooth, and setting up if the user types y
+echo "Do you want to set up bluetooth?"
 echo "(y/n)"
-read bluetooth_choice
+read -r bluetooth_choice
+
 if [[ $bluetooth_choice == "y" ]]; then
-	sudo pacman -S bluez blueman
-	sudo systemctl enable bluetooth
-	#Installing software
+    sudo pacman -S bluez blueman
+    sudo systemctl enable bluetooth
 
-	echo """1 -- pipewire
-2 -- pulseaudio"""
-	read audio_choice
-	#asking user for input
+    # Installing software
+    echo "1 -- pipewire"
+    echo "2 -- pulseaudio"
+    read -r audio_choice
 
-	if [[ $audio_choice == "1" ]]; then
-		continue
-	elif [[ $audio_choice == "2" ]]; then
-		sudo pacman -S pulseaudio-bluetooth
-	else
-	fi
-	echo "blueman-applet &" >>~/xprofile
-	#if statement for installing pulseaudio-bluetooth
+    # asking user for input
+    if [[ $audio_choice == "1" ]]; then
+        :
+    elif [[ $audio_choice == "2" ]]; then
+        sudo pacman -S pulseaudio-bluetooth
+    else
+        echo "Invalid choice."
+    fi
+
+    echo "blueman-applet &" >> ~/.xprofile
+
+    # if statement for installing pulseaudio-bluetooth
 else
-	continue
+    :
 fi
+
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
 echo "also when you're finished running this and reboot into dwm delete the dwm-setup folder"
