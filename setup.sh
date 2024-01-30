@@ -49,6 +49,7 @@ echo "
 "
 
 
+
 # optimise mirrors
 sudo pacman -S reflector
 sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
