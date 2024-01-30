@@ -33,15 +33,34 @@ echo """
                                                                                
                     Ascii representation of logo                                          
 """
-echo """
-______                                   _               
-|  _  \                                 | |              
-| | | |_      ___ __ ___ ______ ___  ___| |_ _   _ _ __  
-| | | \ \ /\ / / '_ ` _ \______/ __\/ _ \ __\ \ \ \ \_ \ 
-| |/ / \ V  V /| | | | | |     \__ \  __/ |_| |_| | |_) |
-|___/   \_/\_/ |_| |_| |_|     |___/\___|\__|\__,_| .__/ 
-                                                  | |    
-                                                  |_|
+echo """ 
+
+                                                                                                                                                                                                     
+                                                                                                                                                                                                     
+DDDDDDDDDDDDD                                                                                                                                     tttt                                               
+D::::::::::::DDD                                                                                                                               ttt:::t                                               
+D:::::::::::::::DD                                                                                                                             t:::::t                                               
+DDD:::::DDDDD:::::D                                                                                                                            t:::::t                                               
+  D:::::D    D:::::Dwwwwwww           wwwww           wwwwwww mmmmmmm    mmmmmmm                        ssssssssss       eeeeeeeeeeee    ttttttt:::::ttttttt    uuuuuu    uuuuuu ppppp   ppppppppp   
+  D:::::D     D:::::Dw:::::w         w:::::w         w:::::wmm:::::::m  m:::::::mm                    ss::::::::::s    ee::::::::::::ee  t:::::::::::::::::t    u::::u    u::::u p::::ppp:::::::::p  
+  D:::::D     D:::::D w:::::w       w:::::::w       w:::::wm::::::::::mm::::::::::m                 ss:::::::::::::s  e::::::eeeee:::::eet:::::::::::::::::t    u::::u    u::::u p:::::::::::::::::p 
+  D:::::D     D:::::D  w:::::w     w:::::::::w     w:::::w m::::::::::::::::::::::m --------------- s::::::ssss:::::se::::::e     e:::::etttttt:::::::tttttt    u::::u    u::::u pp::::::ppppp::::::p
+  D:::::D     D:::::D   w:::::w   w:::::w:::::w   w:::::w  m:::::mmm::::::mmm:::::m -:::::::::::::-  s:::::s  ssssss e:::::::eeeee::::::e      t:::::t          u::::u    u::::u  p:::::p     p:::::p
+  D:::::D     D:::::D    w:::::w w:::::w w:::::w w:::::w   m::::m   m::::m   m::::m ---------------    s::::::s      e:::::::::::::::::e       t:::::t          u::::u    u::::u  p:::::p     p:::::p
+  D:::::D     D:::::D     w:::::w:::::w   w:::::w:::::w    m::::m   m::::m   m::::m                       s::::::s   e::::::eeeeeeeeeee        t:::::t          u::::u    u::::u  p:::::p     p:::::p
+  D:::::D    D:::::D       w:::::::::w     w:::::::::w     m::::m   m::::m   m::::m                 ssssss   s:::::s e:::::::e                 t:::::t    ttttttu:::::uuuu:::::u  p:::::p    p::::::p
+DDD:::::DDDDD:::::D         w:::::::w       w:::::::w      m::::m   m::::m   m::::m                 s:::::ssss::::::se::::::::e                t::::::tttt:::::tu:::::::::::::::uup:::::ppppp:::::::p
+D:::::::::::::::DD           w:::::w         w:::::w       m::::m   m::::m   m::::m                 s::::::::::::::s  e::::::::eeeeeeee        tt::::::::::::::t u:::::::::::::::up::::::::::::::::p 
+D::::::::::::DDD              w:::w           w:::w        m::::m   m::::m   m::::m                  s:::::::::::ss    ee:::::::::::::e          tt:::::::::::tt  uu::::::::uu:::up::::::::::::::pp  
+DDDDDDDDDDDDD                  www             www         mmmmmm   mmmmmm   mmmmmm                   sssssssssss        eeeeeeeeeeeeee            ttttttttttt      uuuuuuuu  uuuup::::::pppppppp    
+                                                                                                                                                                                  p:::::p            
+                                                                                                                                                                                  p:::::p            
+                                                                                                                                                                                 p:::::::p           
+                                                                                                                                                                                 p:::::::p           
+                                                                                                                                                                                 p:::::::p           
+                                                                                                                                                                                 ppppppppp           
+                                                                                                                                                                                                     
+
 """
 
 
