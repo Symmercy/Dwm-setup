@@ -31,7 +31,8 @@ echo"""
                             .....  (#, * * ,((  .....                           
                             ......   /(/ /(/   .... ..                          
                                    ,                                            
-                    Ascii representation of logo                                          """
+                    Ascii representation of logo                                          
+"""
 echo """
 
 ______                                   _               
