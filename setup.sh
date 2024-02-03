@@ -118,13 +118,14 @@ curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init bash)"' >>.bashrc
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
-# adding nerd font
+# adding nerd fonts
 mkdir Download-temp
 cd Download-temp
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaCode.zip
+unzip JetBrainsMono.zip
 unzip CascadiaCode.zip
-sudo mkdir /usr/share/fonts/CascadiaCode
-sudo mv *.ttf /usr/share/fonts/CascadiaCode
+sudo mv *.ttf /usr/share/fonts/TTF
 rm -rf CascadiaCode.zip
 cd ~
 rm -rf Download-temp
