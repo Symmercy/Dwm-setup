@@ -33,7 +33,7 @@ echo """
                                                                                
                     Ascii representation of logo                                          
 """
-sleep 2
+sleep 1
 echo "
   _____                                    _               
  |  __ \\                                  | |              
