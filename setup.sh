@@ -56,7 +56,7 @@ sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu --noconfirm
 sleep 3
 #Installing dependencies
-sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip eza copyq
+sudo pacman -S xorg xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk ly ttf-font-awesome feh lxappearance picom wget polkit-gnome ttf-hack flameshot dunst flatpak pamixer neovim unzip eza copyq bat
 sleep 5
 # Making a directory for suckless software
 cd ~
@@ -145,6 +145,7 @@ echo "copyq &" >>.xprofile
 echo "alias vim=\"nvim\"" >>~/.bashrc
 echo "alias paru=\"yay\"" >>~/.bashrc
 echo "alias ls=\"eza -al --color=always --group-directories-first\"" >>~/.bashrc
+echo "alias cat=\"bat\"" >>~/.bashrc
 
 #Adding an xresources file (catppuccin)
 cd ~
@@ -198,7 +199,6 @@ fi
 
 # Telling the user that it is finished and asking if the user wants to reboot
 echo "Installing DWM is finished do you want to restart your PC"
-echo "also when you're finished running this and reboot into dwm delete the dwm-setup folder"
 echo "(y/n)"
 read reboot_choice
 
