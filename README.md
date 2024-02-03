@@ -7,7 +7,7 @@ It uses a rice that has been set up to my liking, you can probably adapt to any 
 
 * Uses Catpuccin
 * Installs needed programs
-* Can set up bluetooth (in the works)
+* Can set up bluetooth
 
 
 ## How it looks
