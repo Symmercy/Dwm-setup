@@ -123,8 +123,10 @@ mkdir Download-temp
 cd Download-temp
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaCode.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip
 unzip JetBrainsMono.zip
 unzip CascadiaCode.zip
+unzip Meslo.zip
 sudo mv *.ttf /usr/share/fonts/TTF
 rm -rf CascadiaCode.zip
 cd ~
