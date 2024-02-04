@@ -5,7 +5,7 @@ This is a shell script for setting up dwm to my liking.
 It installs some programs like st,slstatus,flameshot and of course dwm.
 It uses a rice that has been set up to my liking, you can probably adapt to any other rice. 
 
-* Uses Catpuccin
+* Uses Catpuccin mocha
 * Installs needed programs
 * Can set up bluetooth
 
