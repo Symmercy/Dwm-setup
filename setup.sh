@@ -31,7 +31,7 @@ echo """
                             .....  (#, * * ,((  .....                           
                             ......   /(/ /(/   .... ..                          
                                                                                
-                    Ascii representation of logo                                          
+                   	Ascii representation of logo                                          
 """
 sleep 1
 echo "
