@@ -49,8 +49,9 @@ echo "
 
 
 # optimise mirrors
+sudo pacman -Syy
 sudo pacman -S reflector
-sudo reflector --verbose --sort rate -l 30 --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --sort rate -l 50 --save /etc/pacman.d/mirrorlist
 
 #Upgrading
 sudo pacman -Syyu --noconfirm
@@ -93,8 +94,8 @@ sudo mv dwm.desktop /usr/share/xsessions
 
 #Installing yay (aur helper)
 cd ~/.local/.utils
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si --noconfirm
 
 #Installing themes
@@ -103,7 +104,7 @@ yay -S dracula-gtk-theme --noconfirm
 yay -S layan-cursor-theme-git --noconfirm
 
 #Installing aur software
-yay -S brave-bin --noconfirm
+yay -S floorp-bin --noconfirm
 
 #Installing wallpapers
 cd ~
@@ -206,7 +207,7 @@ echo "(y/n)"
 read reboot_choice
 
 #if statement for rebooting
-if [[ $reboot-choice == "y" ]]; then
+if [[ $reboot_choice == "y" ]]; then
 	reboot
 else
 	exit 0
