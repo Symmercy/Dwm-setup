@@ -99,12 +99,12 @@ cd paru
 makepkg -si --noconfirm
 
 #Installing themes
-yay -S papirus-icon-theme --noconfirm
-yay -S dracula-gtk-theme --noconfirm
-yay -S layan-cursor-theme-git --noconfirm
+paru -S papirus-icon-theme --noconfirm
+paru -S dracula-gtk-theme --noconfirm
+paru -S layan-cursor-theme-git --noconfirm
 
 #Installing aur software
-yay -S floorp-bin --noconfirm
+paru -S floorp-bin --noconfirm
 
 #Installing wallpapers
 cd ~
@@ -146,7 +146,7 @@ echo "copyq &" >>.xprofile
 
 #Adding aliases to .bashrc
 echo "alias vim=\"nvim\"" >>~/.bashrc
-echo "alias paru=\"yay\"" >>~/.bashrc
+echo "alias yay=\"paru\"" >>~/.bashrc
 echo "alias ls=\"eza -al --color=always --group-directories-first\"" >>~/.bashrc
 echo "alias cat=\"bat\"" >>~/.bashrc
 
